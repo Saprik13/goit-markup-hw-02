@@ -1,0 +1,74 @@
+/* Палитра
+
+цвет заголовка  #212121;
+основной текст #757575;
+акцент #2196f3;
+белый #ffffff;
+вторичный фон #F5F4FA;
+
+*/
+
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-font: "Roboto";
+  --secondary-font: "Raleway";
+}
+
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: var(--primary-white);
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* логотип студии */
+.logo-web,
+.logo-studio {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  color: #2196f3;
+}
+.logo-studio {
+  color: #000000;
+}
+
+/* site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* заголовки секций */
+.section-title .title {
+  color: var(--title-text-color);
+}
+
+.btn-group .current {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.btn-group .button,
+.current {
+  cursor: pointer;
+}
