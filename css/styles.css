@@ -1,68 +1,62 @@
 /* Палитра
 
-цвет заголовка  #212121;
-основной текст #757575;
-акцент #2196f3;
-белый #ffffff;
-вторичный фон #F5F4FA;
+  --title-text-color: #212121;
+  --secondary-background-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
 
 */
 
-:root {
-  --title-text-color: #212121;
-  --primary-text-color: #757575;
-  --accent-color: #2196f3;
-  --primary-font: "Roboto";
-  --secondary-font: "Raleway";
+/* hero ===studio=== */
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-body {
-  font-family: var(--primary-font), sans-serif;
-  background-color: var(--primary-white);
+/* секции ===studio===*/
+.section-title.hiden {
+  visibility: hidden;
 }
-
-address {
-  font-style: normal;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-
-/* логотип студии */
-.logo-web,
-.logo-studio {
-  font-family: Raleway;
+.section-title {
   font-weight: bold;
-  font-size: 26px;
-  color: #2196f3;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
-.logo-studio {
-  color: #000000;
-}
-
-/* site nav */
-.site-nav .link {
-  color: var(--title-text-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
+.title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
+.text {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.section .team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
-/* заголовки секций */
-.section-title .title {
-  color: var(--title-text-color);
+.section .team-post {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
+/* кнопки портфолио */
 .btn-group .current {
   background-color: var(--accent-color);
   color: #ffffff;
@@ -70,5 +64,24 @@ a {
 
 .btn-group .button,
 .current {
+  background: var(--secondary-background-color);
+  border-radius: 4px;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* секции ===portfolio===*/
+.section .port-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section .port-line {
+  color: var(--primary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
